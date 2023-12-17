@@ -3,6 +3,9 @@
 
 
 def garmonic_mean(*args):
+    """
+    Вычисление среднего гармонического
+    """
     if args:
         values = [float(arg) for arg in args]
 
@@ -14,9 +17,13 @@ def garmonic_mean(*args):
 
 
 def main():
-    user_values = [float(value) for value in input("Числа: ").split()]
-    print(garmonic_mean(*user_values))
-
+    """
+    Главная функция программы.
+    """
+    print(garmonic_mean(2, 4, 8, 16, 32))
+    print(garmonic_mean(4, 5, 6, 1))
+    print(garmonic_mean(5, 6, 7))
+    print(garmonic_mean())
 
 if __name__ == "__main__":
     main()
